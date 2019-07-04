@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "standard && tap --coverage test",
-    "version": "standard-version"
+    "version": "standard-version",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,8 @@
     "request": "^2.37.0",
     "semver": "^5.1.0",
     "treeify": "^1.0.1",
-    "yargs": "^4.6.0"
-  }
+    "yargs": "^4.6.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
